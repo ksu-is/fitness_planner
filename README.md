@@ -5,6 +5,8 @@ Fitness Planner assists your workout by
 - tracking your workout progress
 
 This uses a CLI for now because I work out at home.
+# Future Features
+Adding button functions. 
 
 ## Configuration
 
