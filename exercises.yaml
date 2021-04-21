@@ -1,7 +1,7 @@
 chest:
 - "burpees"
 - "push ups"
-- "low-incline dumbbell bench press"
+- #"low-incline dumbbell bench press"
 - "decline push ups"
 - "wide push ups"
 - "mountain climbers"
