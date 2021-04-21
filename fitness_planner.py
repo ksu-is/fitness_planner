@@ -66,20 +66,20 @@ def interact_with_user(exercise, num_sets, warmup=False):
 
     print(f"===== {exercise} =====")
     
-    if warmup:
-        if not prev_numbers:
-            inp = input(f"What's your best guess of your 4-6RM for {exercise}?")
-            weight = convert_weight_string(inp)
-        else:
-            weight = convert_weight_string(prev_numbers[0]["weight"])
-        print("       ( warm up ) ")
+    #if warmup:
+        #if not prev_numbers:
+            #inp = input(f"What's your best guess of your 4-6RM for {exercise}?")
+            #weight = convert_weight_string(inp)
+        #else:
+            #weight = convert_weight_string(prev_numbers[0]["weight"])
+        #print("       ( warm up ) ")
         
-        def warmup_routine(reps, percent, rest_min):
-            input(f"{reps} reps of {round_nearest_five(weight*percent)}. Press Enter to continue...")
-            countdown_for_rest(rest_min)
+        #def warmup_routine(reps, percent, rest_min):
+            #input(f"{reps} reps of {round_nearest_five(weight*percent)}. Press Enter to continue...")
+            #countdown_for_rest(rest_min)
         
-        for (percent, reps, rest_min) in [(.5, 12, 1), (.5, 10, 1), (.7, 6, 1), (.9, 2, 2)]:
-            warmup_routine(reps, percent, rest_min)
+        #for (percent, reps, rest_min) in [(.5, 12, 1), (.5, 10, 1), (.7, 6, 1), (.9, 2, 2)]:
+            #warmup_routine(reps, percent, rest_min)
 
     if exercise_history.get(exercise):
         prev_num_str = [x['weight'] + 'x' + x['reps'] for x in prev_numbers]
