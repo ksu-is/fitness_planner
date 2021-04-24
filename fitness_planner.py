@@ -93,6 +93,7 @@ def interact_with_user(exercise, num_sets, warmup=False):
             if reps.strip().replace('.','',1).isdigit():
                 break
             else:
+                #break
                 print("Invalid input.")
         exercise_history = add_exercise_dictionary(exercise_history, exercise, weight, reps)
         save_exercise_history(exercise_history)
@@ -110,6 +111,7 @@ def countdown_for_rest(min):
         sys.stdout.flush()
         time.sleep(1)
     sys.stdout.write("\r")
+    
 
 def shuffle(exercises, count):
     """Apply modifiers and then randomly shuffles list"""
